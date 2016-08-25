@@ -1,0 +1,32 @@
+parts {
+  device {
+    display {
+      width 1080
+      height 1920
+      x 0
+      y 0
+    }
+  }
+  portrait {
+    background {
+      image port_back.png
+    }
+  }
+}
+layouts {
+  portrait {
+    width 1370
+    height 2396
+    event EV_SW:0:1
+    part1 {
+      name portrait
+      x 0
+      y 0
+    }
+    part2 {
+      name device
+      x 142
+      y 226
+    }
+  }
+}
